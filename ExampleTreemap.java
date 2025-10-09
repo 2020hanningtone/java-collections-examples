@@ -2,6 +2,7 @@ package dataStructures;
 //import  the TreeMap class
 import java.util.TreeMap;
 
+//TreeMap stores key/values in sorted order
 public class ExampleTreemap {
     public static void main(String[] args) {
         //Create TreeMap object to hold string keys and string values

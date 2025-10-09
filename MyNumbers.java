@@ -2,6 +2,7 @@ package dataStructures;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 public class MyNumbers {
     public static void main(String[] args) {
@@ -15,8 +16,6 @@ public class MyNumbers {
         numbers.add(11);
         numbers.add(2);
 
-
-
         System.out.println("Original list: ");
 
         //for each with lambda expression
@@ -26,16 +25,20 @@ public class MyNumbers {
         Collections.sort(numbers);
         //,Collections.reverseOrder() reverses from descending to ascending
 
-
         //for Each loop
       /* for (int i : numbers){
             System.out.println(i);
         }*/
 
-        //Normal for loop
-        for (int h = 0 ; h < numbers.size() ; h++){
-            System.out.println(numbers.get(h));
+        //Iterator to loop through the list
+        Iterator<Integer> it = numbers.iterator();
+        while (it.hasNext()){
+            System.out.println(it.next());
         }
+        //Normal for loop
+       /* for (int h = 0 ; h < numbers.size() ; h++){
+            System.out.println(numbers.get(h));
+        }*/
 
     }
 }
