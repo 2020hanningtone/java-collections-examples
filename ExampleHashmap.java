@@ -35,7 +35,7 @@ public class ExampleHashmap {
         //Print Keys and values
         System.out.println("Get both keys and values:");
          for (String i : capitalCities.keySet()) {
-            System.out.println(i + " : "+ capitalCities.get(i));
+            System.out.println("keys:" + i + "  ,Values: " + capitalCities.get(i));
         }
     }
 }
