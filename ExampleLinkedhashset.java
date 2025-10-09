@@ -1,7 +1,6 @@
 package dataStructures;
 
 import java.util.LinkedHashSet;
-
 //Allows no duplicates
 //keeps the original insertion order
 public class ExampleLinkedhashset {
@@ -19,6 +18,5 @@ public class ExampleLinkedhashset {
             System.out.println(h);
         }
         //use set methods to organize the set
-
     }
 }

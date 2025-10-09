@@ -1,7 +1,8 @@
 package dataStructures;
+//import the LinkedList class
 import java.util.LinkedList;
 import java.util.List;
-public class ExapleLinked {
+public class ExampleLinked {
     public static void main(String[] args) {
         List<String> cars = new LinkedList<>();
 
@@ -33,7 +34,6 @@ public class ExapleLinked {
             System.out.println(car);
         }
         System.out.println();
-
         //removeLast()
         System.out.println("After removeFist()" + cars.removeFirst());
         for (String car : cars){
