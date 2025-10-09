@@ -7,12 +7,16 @@ public class ExampleHashmap {
     public static void main(String[] args) {
         //Create a HashMap Object called capitalCities
         HashMap <String, String > capitalCities = new HashMap<>();
+
+        //we can have duplicate values but not keys
         capitalCities.put("England" , "London");
         capitalCities.put("India" , "New Dehhli");
         capitalCities.put("Australia" , "Wien");
         capitalCities.put("Norway" , "Oslo");
         capitalCities.put("USA" , "Washington DC");
         capitalCities.put("Norway" , "Oslo");
+        capitalCities.put("Kenya" , "Nairobi");
+        capitalCities.put("Tanzania" , "Dodoma");
 
         //Print Keys
         System.out.println("Get only keys:");
@@ -31,7 +35,7 @@ public class ExampleHashmap {
         //Print Keys and values
         System.out.println("Get both keys and values:");
          for (String i : capitalCities.keySet()) {
-            System.out.println("Keys: " + i + " Values: " + capitalCities.get(i));
+            System.out.println(i + " : "+ capitalCities.get(i));
         }
     }
 }
